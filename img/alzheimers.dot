@@ -1,0 +1,96 @@
+# $ dot -Tps alz1graph.dot -o alzgraph.ps
+# $ ps2pdf alzgraph.ps
+# $ pdf2svg alzgraph.pdf alzgraph.svg
+
+graph alz1 {
+nodesep="0.04mm";
+ranksep=0.2;
+node [shape=point];
+edge [color=gray];
+a -- 1.2;
+a -- 3.4;
+a -- 5.;
+a -- 6.8;
+b -- 1.2;
+b -- 3.4;
+b -- 5.;
+b -- 6.8;
+c -- 1.2;
+c -- 3.4;
+c -- 5.;
+c -- 6.8;
+1.2 -- 1;
+1.2 -- 2;
+3.4 -- 3;
+3.4 -- 4;
+5. -- 5;
+6.8 -- 6.7;
+node [color="#dd6666"];
+8 -- 6.8;
+9;
+node [color="#6666dd"];
+
+2 -- donrivbullock;
+5 -- donrivbullock;
+9 -- donrivbullock;
+
+1 -- don302;
+6.7 -- don302;
+2 -- don302;
+
+1 -- don304;
+6.7 -- don304;
+
+5 -- don311;
+2 -- don311;
+
+1 -- don402;
+2 -- don402;
+
+6.7 -- donfeldman;
+2 -- donfeldman;
+3 -- donfeldman;
+5 -- donfeldman;
+9 -- donfeldman;
+
+2 -- donnordic;
+8 -- donnordic;
+4 -- donnordic;
+9 -- donnordic;
+
+1 -- galint1wilcock;
+3 -- galint1wilcock;
+
+1 -- galusa1raskind;
+3 -- galusa1raskind;
+
+1 -- galusa10tariot;
+9 -- galusa10tariot;
+5 -- galusa10tariot;
+
+1 -- rivb303;
+6.7 -- rivb303;
+4 -- rivb303;
+2 -- rivb303;
+
+1 -- rivb304;
+6.7 -- rivb304;
+4 -- rivb304;
+2 -- rivb304;
+
+1 -- rivb351;
+6.7 -- rivb351;
+4 -- rivb351;
+2 -- rivb351;
+
+1 -- rivb352;
+6.7 -- rivb352;
+4 -- rivb352;
+2 -- rivb352;
+
+node [color=black];
+{ rank = same; a; b; c; }
+{ rank = same; 1.2; 3.4; 5.; 6.8; }
+{ rank = same; 1; 2; 3; 4; 5; 6.7; 8; 9; }
+}
+
